@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+    <title>Twitter Bootstrap Admin</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.1.min.css">
+	</head>
+  <body>
+    <div class="modal">
+      <form action="dashboard.html" class="form-stacked">
+        <div class="modal-header">
+          <h3>Login</h3>
+        </div>
+        <div class="modal-body">
+          <fieldset>
+            <div class="clearfix error">
+              <label for="login_username">Username</label>
+              <div class="input">
+                <input class="large error" id="login_username" name="login[username]" size="30" type="text">
+                <span class="help-inline">Username hint</span>
+              </div>
+            </div>
+            <div class="clearfix">
+              <label for="login_password">Password</label>
+              <div class="input">
+                <input class="large" id="login_password" name="login[password]" size="30" type="password">
+                <span class="help-inline">Password hint</span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="modal-footer">
+          <a href="#">Can't remember your username/password?</a>
+          <button type="submit" class="btn primary">Login</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
