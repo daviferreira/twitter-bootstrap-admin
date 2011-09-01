@@ -11,9 +11,14 @@ describe("Login", function() {
   });
 
   it("should toggle between login and password recovery", function() {
+    expect($("#m-login").is(":visible")).toBe(true);
+    expect($("#m-recovery").is(":visible")).toBe(false);
     toggleLoginRecovery();
-    expect($("#m-login").is(":visible")).toBe(false);
-    expect($("#m-recovery").is(":visible")).toBe(true);
+    waits(510);
+    runs(function(){
+      expect($("#m-login").is(":visible")).toBe(false);
+      expect($("#m-recovery").is(":visible")).toBe(true);      
+    });
   });
 
 });

@@ -1,7 +1,7 @@
 function toggleLoginRecovery(){
   var is_login_visible = $("#m-login").is(":visible");
-  (is_login_visible ? $("#m-login") : $("#m-recovery")).slideUp("fast", function(){
-    (is_login_visible ? $("#m-recovery") : $("#m-login")).slideDown("fast", function(){
+  (is_login_visible ? $("#m-login") : $("#m-recovery")).slideUp(500, function(){
+    (is_login_visible ? $("#m-recovery") : $("#m-login")).slideDown(500, function(){
       $(this).find("input:text:first").focus();
     });
   });
