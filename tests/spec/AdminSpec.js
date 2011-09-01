@@ -11,16 +11,7 @@ describe("Login", function() {
   });
 
   it("should toggle between login and password recovery", function() {
-    expect($("#m-login").is(":visible")).toBe(true);
-    expect($("#m-recovery").is(":visible")).toBe(false);
-    login.remove();
-    recovery.remove();
-  });
-  
-  it("should do it, fuck", function(){
     toggleLoginRecovery();
-    console.log($("#m-login"));
-    console.log($("#m-login").css("display"));
     expect($("#m-login").is(":visible")).toBe(false);
     expect($("#m-recovery").is(":visible")).toBe(true);
   });
