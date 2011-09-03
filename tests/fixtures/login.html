@@ -7,14 +7,14 @@
       <div class="clearfix">
         <label for="login-username">Username</label>
         <div class="input">
-          <input class="large required" id="login-username" name="login[username]" size="30" type="text" autocomplete="off" />
+          <input class="large validates[required]" id="login-username" name="login[username]" size="30" type="text" autocomplete="off" />
           <span class="help-inline">Username hint</span>
         </div>
       </div>
       <div class="clearfix">
         <label for="login-password">Password</label>
         <div class="input">
-          <input class="large required" id="login-password" name="login[password]" size="30" type="password">
+          <input class="large validates[required,min[2],max[3]]" id="login-password" name="login[password]" size="30" type="password">
           <span class="help-inline">Password hint</span>
         </div>
       </div>

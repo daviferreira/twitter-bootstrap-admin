@@ -10,31 +10,47 @@ var Admin = {
   },
   
   validateForm: function(el){
-    $(el).find('.error').each(function(){
-      $(this).next().html($(this).data('hint'));
-      $(this).removeClass('error');
-    });
-    $(el).find('.required').each(function(){
-      if(!$(this).val()){
-        var hint = $(this).next();
-        if(!$(this).data('hint'))
-          $(this).data('hint', hint.html());
-          
-        $(this).addClass('error');
-        $(this).parent().parent().addClass('error');
-        hint.html($(this).data('error-message') || 'This field is required.');
+    var _checkForHint = function(field){
+      var hint = field.next();
+      if(!field.data('hint'))
+        field.data('hint', hint.html());
+      hint.html(field.data('error-message') || 'This field is required.');  
+    };
+    
+    var _validateField = function(field, rule){
+      switch(rule){
+        case 'required':
+          if(!field.val()){
+            _checkForHint(field);
+            field.addClass('error');
+            field.parent().parent().addClass('error');
+          }
+          break;
       }
+    };
+    
+    $(el).find('[class*=validates]').each(function(){
+      var field = $(this);
+      field.next().html($(this).data('hint'));
+      field.removeClass('error');
+      field.parent().parent().removeClass('error');
+      
+      var rules = /validates\[(.*)\]/.exec(field.attr('class'));
+      if(rules){
+        rules = rules[1].split(/\[|,|\]/);
+        for(i in rules)
+          _validateField(field, rules[i]);
+      }      
     });
-
+    
     if($(el).find('.error').length > 0){
       $(el).find('input.error, textarea.error')[0].focus();
       return false;
     }
     return true;
   }
-
+  
 };
-
 
 $(function(){
   $('form:visible:first input:text:first').focus();
