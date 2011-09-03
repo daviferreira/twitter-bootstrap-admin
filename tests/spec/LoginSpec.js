@@ -2,7 +2,10 @@ describe("Login", function() {
 
   describe("Validations", function(){
     beforeEach(function(){
-    
+      loadFixtures('../../../fixtures/login.html');
+      $('form').submit(function(e){
+        return Admin.validateForm(this);
+      });
     });
 
     afterEach(function(){
@@ -10,7 +13,15 @@ describe("Login", function() {
     });
 
     describe("Login form validation", function(){
-    
+      it("Should mark field with error on invalid username", function(){
+        $('#frm-login').submit();
+        expect($("#login-username").hasClass("error")).toBe(true);
+      });
+      
+      it("Should mark field with error on invalid password", function(){
+        $('#frm-login').submit();
+        expect($("#login-password").hasClass("error")).toBe(true);
+      });
     });
 
     describe("Password recovery form validation", function(){
@@ -33,7 +44,7 @@ describe("Login", function() {
       expect($("#m-login").is(":visible")).toBe(true);
       expect($("#m-recovery").is(":visible")).toBe(false);
       Admin.toggleLoginRecovery();
-      waits(1200);
+      waits(1500);
       runs(function(){
         expect($("#m-login").is(":visible")).toBe(false);
         expect($("#m-recovery").is(":visible")).toBe(true);      
@@ -43,7 +54,7 @@ describe("Login", function() {
     it("should focus on the first input text after toggling", function(){
       expect($("#m-recovery input:focus").length).toEqual(0);
       Admin.toggleLoginRecovery();
-      waits(1200);
+      waits(1500);
       runs(function(){
         expect($("#m-recovery input:focus").length).toEqual(1);
       });

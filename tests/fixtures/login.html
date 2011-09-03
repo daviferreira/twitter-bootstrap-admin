@@ -1,0 +1,27 @@
+<form action="dashboard.html" method="post" id="frm-login">
+  <div class="modal-header">
+    <h3>Login</h3>
+  </div>
+  <div class="modal-body">
+    <fieldset>
+      <div class="clearfix">
+        <label for="login-username">Username</label>
+        <div class="input">
+          <input class="large required" id="login-username" name="login[username]" size="30" type="text" autocomplete="off" />
+          <span class="help-inline">Username hint</span>
+        </div>
+      </div>
+      <div class="clearfix">
+        <label for="login-password">Password</label>
+        <div class="input">
+          <input class="large required" id="login-password" name="login[password]" size="30" type="password">
+          <span class="help-inline">Password hint</span>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="toggle-login-recovery">Can't remember your username/password?</a>
+    <button type="submit" class="btn primary">Login</button>
+  </div>
+</form>
