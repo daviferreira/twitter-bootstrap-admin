@@ -1,0 +1,241 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Twitter Bootstrap Admin</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/stylesheets/global.css">
+ </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="container">
+          <h3><a href="#">Project Name</a></h3>
+          <ul class="nav">
+            <li class="active"><a href="#">Users</a></li>
+            <li><a href="#">Sections</a></li>
+            <li><a href="#">Content</a></li>
+            <li><a href="#">Media</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">Settings</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Secondary link</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Another link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form action="">
+            <input type="text" placeholder="Search">
+          </form>
+          <ul class="nav secondary-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle">System</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">About</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container top">
+                <div class="page-header">
+                  <h2>New user</h2>
+                </div>
+
+
+                <form>
+                        <fieldset>
+                          <legend>Example form legend</legend>
+                          <div class="clearfix">
+                            <label for="xlInput">X-Large Input</label>
+                            <div class="input">
+                              <input class="xlarge" id="xlInput" name="xlInput" size="30" type="text">
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label for="normalSelect">Select</label>
+                            <div class="input">
+                              <select name="normalSelect" id="normalSelect">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label for="mediumSelect">Select</label>
+                            <div class="input">
+                              <select class="medium" name="mediumSelect" id="mediumSelect">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label>Uneditable Input</label>
+                            <div class="input">
+                              <span class="uneditable-input">Some Value Here</span>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label for="disabledInput">Disabled Input</label>
+                            <div class="input">
+                              <input class="xlarge disabled" id="disabledInput" name="disabledInput" size="30" type="text" placeholder="Disabled input here… carry on." disabled="">
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix error">
+                            <label for="xlInput2">X-Large Input</label>
+                            <div class="input">
+                              <input class="xlarge error" id="xlInput2" name="xlInput2" size="30" type="text">
+                              <span class="help-inline">Small snippet of help text</span>
+                            </div>
+                          </div><!-- /clearfix -->
+                        </fieldset>
+                        <fieldset>
+                          <legend>Example form legend</legend>
+                          <div class="clearfix">
+                            <label for="prependedInput">Prepended Text</label>
+                            <div class="input">
+                              <div class="input-prepend">
+                                <span class="add-on">@</span>
+                                <input class="medium" id="prependedInput" name="prependedInput" size="16" type="text">
+                              </div>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label for="prependedInput2">Prepended Checkbox</label>
+                            <div class="input">
+                              <div class="input-prepend">
+                                <label class="add-on"><input type="checkbox" name="" id="" value=""></label>
+                                <input class="mini" id="prependedInput2" name="prependedInput2" size="16" type="text">
+                              </div>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label for="appendedInput">Appended Checkbox</label>
+                            <div class="input">
+                              <div class="input-append">
+                                <input class="mini" id="appendedInput" name="appendedInput" size="16" type="text">
+                                <label class="add-on active"><input type="checkbox" name="" id="" value="" checked="checked"></label>
+                              </div>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label for="fileInput">File Input</label>
+                            <div class="input">
+                              <input class="input-file" id="fileInput" name="fileInput" type="file">
+                            </div>
+                          </div><!-- /clearfix -->
+                        </fieldset>
+                        <fieldset>
+                          <legend>Example form legend</legend>
+                          <div class="clearfix">
+                            <label id="optionsCheckboxes">List of Options</label>
+                            <div class="input">
+                              <ul class="inputs-list">
+                                <li>
+                                  <label>
+                                    <input type="checkbox" name="optionsCheckboxes" value="option1">
+                                    <span>Option one is this and that—be sure to include why it’s great</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" name="optionsCheckboxes" value="option2">
+                                    <span>Option two can also be checked and included in form results</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="checkbox" name="optionsCheckboxes" value="option2">
+                                    <span>Option three can—yes, you guessed it—also be checked and included in form results</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label class="disabled">
+                                    <input type="checkbox" name="optionsCheckboxes" value="option2" disabled="">
+                                    <span>Option four cannot be checked as it is disabled.</span>
+                                  </label>
+                                </li>
+                              </ul>
+                              <span class="help-block">
+                                <strong>Note:</strong> Labels surround all the options for much larger click areas and a more usable form.
+                              </span>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label>Date Range</label>
+                            <div class="input">
+                              <div class="inline-inputs">
+                                <input class="small" type="text" value="May 1, 2011">
+                                <input class="mini" type="text" value="12:00am">
+                                to
+                                <input class="small" type="text" value="May 8, 2011">
+                                <input class="mini" type="text" value="11:59pm">
+                                <span class="help-inline">All times are shown as Pacific Standard Time (GMT -08:00).</span>
+                              </div>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label for="textarea">Textarea</label>
+                            <div class="input">
+                              <textarea class="xxlarge" id="textarea" name="textarea"></textarea>
+                              <span class="help-block">
+                                Block of help text to describe the field above if need be.
+                              </span>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="clearfix">
+                            <label id="optionsRadio">List of Options</label>
+                            <div class="input">
+                              <ul class="inputs-list">
+                                <li>
+                                  <label>
+                                    <input type="radio" checked="" name="optionsRadios" value="option1">
+                                    <span>Option one is this and that—be sure to include why it’s great</span>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    <input type="radio" name="optionsRadios" value="option2">
+                                    <span>Option two can is something else and selecting it will deselect options 1</span>
+                                  </label>
+                                </li>
+                              </ul>
+                            </div>
+                          </div><!-- /clearfix -->
+                          <div class="actions">
+                            <input type="submit" class="btn primary" value="Save Changes">&nbsp;<button type="reset" class="btn">Cancel</button>
+                          </div>
+                        </fieldset>
+                      </form> 
+      
+    </div>
+    
+    <div id="footer">
+      <div class="inner">
+        <div class="container">
+          <p class="right"><a href="#">Back to top</a></p>
+          <p>
+            Designed and built with all the love in the world <a href="http://twitter.com/twitter" target="_blank">@twitter</a> by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.<br />
+            Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    <script src="assets/scripts/admin.js"></script>
+    <script>$('.dropdown-menu').slideDown('fast');</script>
+  </body>
+</html>
