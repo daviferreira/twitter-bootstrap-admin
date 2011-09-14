@@ -1,191 +1,259 @@
 <!DOCTYPE html> 
 <html>
-  <head>
+<head>
     <title>Twitter Bootstrap Admin</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/css/global.css">
- </head>
-  <body>
-    <div class="topbar">
-      <div class="topbar-inner">
-        <div class="container">
-          <h3><a href="#">Project Name</a></h3>
-          <ul class="nav">
-            <li class="active"><a href="#">Users</a></li>
-            <li><a href="#">Sections</a></li>
-            <li><a href="#">Content</a></li>
-            <li><a href="#">Media</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle">Settings</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Secondary link</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Another link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form action="">
-            <input type="text" placeholder="Search">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="container">
+        <h3>
+          <a href="#">Project Name</a>
+        </h3>
+        <ul class="nav">
+          <li>
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="active">
+            <a href="#">Users</a>
+          </li>
+          <li>
+            <a href="#">Content</a>
+          </li>
+          <li>
+            <a href="#">Media</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Settings</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Secondary link</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li>
+                <a href="#">Another link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form action="">
+          <input type="text" placeholder="Search">
+        </form>
+        <ul class="nav secondary-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">System</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Help</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container top">
+    <div class="page-header list-page">
+      <h2>
+        Users <a  href="form.html" class="btn success small">Add a new user</a>
+      </h2>
+    </div>
+    <div class="row">
+      <div class="span12 columns">
+        <div class="well">
+          <form action="" class="search">
+            <input type="text" placeholder="Search users..." class="xlarge"> <button type="submit" class="btn primary">Submit</button>
           </form>
-          <ul class="nav secondary-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle">System</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Help</a></li>
-                <li><a href="#">About</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Logout</a></li>
-              </ul>
+        </div>
+        <table class="zebra-striped" id="sortTableExample">
+          <thead>
+            <tr>
+              <th class="header">
+                #
+              </th>
+              <th class="yellow header headerSortDown">
+                First Name
+              </th>
+              <th class="blue header">
+                Last Name
+              </th>
+              <th class="green header">
+                Language
+              </th>
+              <th class="red header">
+                Actions
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                1
+              </td>
+              <td>
+                Your
+              </td>
+              <td>
+                One
+              </td>
+              <td>
+                English
+              </td>
+              <td class="crud-actions">
+                <a href="#" class="btn secondary small">view</a>  
+                <a href="#" class="btn primary small">edit</a>
+                <a href="#" class="btn error small">delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2
+              </td>
+              <td>
+                Joe
+              </td>
+              <td>
+                Sixpack
+              </td>
+              <td>
+                English
+              </td>
+              <td class="crud-actions">
+                <a href="#" class="btn secondary small">view</a>  
+                <a href="#" class="btn primary small">edit</a>
+                <a href="#" class="btn error small">delete</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                3
+              </td>
+              <td>
+                Stu
+              </td>
+              <td>
+                Dent
+              </td>
+              <td>
+                Code
+              </td>
+              <td class="crud-actions">
+                <a href="#" class="btn secondary small">view</a>  
+                <a href="#" class="btn primary small">edit</a>
+                <a href="#" class="btn error small">delete</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <ul>
+            <li class="prev">
+              <a href="#">← Previous</a>
+            </li>
+            <li>
+              <a href="#">10</a>
+            </li>
+            <li>
+              <a href="#">11</a>
+            </li>
+            <li>
+              <a href="#">12</a>
+            </li>
+            <li>
+              <a href="#">13</a>
+            </li>
+            <li>
+              <a href="#">14</a>
+            </li>
+            <li class="active">
+              <a href="#">15</a>
+            </li>
+            <li>
+              <a href="#">16</a>
+            </li>
+            <li>
+              <a href="#">17</a>
+            </li>
+            <li>
+              <a href="#">18</a>
+            </li>
+            <li>
+              <a href="#">19</a>
+            </li>
+            <li>
+              <a href="#">20</a>
+            </li>
+            <li class="next">
+              <a href="#">Next →</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="span4 columns">
+        <div class="well">
+          <h4>
+            Settings
+          </h4>
+          <ul>
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <div class="well">
+          <h4>
+            Filter by
+          </h4>
+          <ul>
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link 4</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="container top">
-      <div class="page-header">
-        <h2>Users</h2>
-      </div>
-      <div class="row">
-        <div class="span12 columns">
-
-                <div class="well">
-                <form action="" class="search">
-                  <input type="text" placeholder="Search users..." class="xlarge" />
-                  <button type="submit" class="btn primary">Submit</button>
-                </form>
-                </div>
-                       <table class="zebra-striped" id="sortTableExample">
-                                <thead>
-                                  <tr>
-                                    <th class="header">#</th>
-                                    <th class="yellow header headerSortDown">First Name</th>
-                                    <th class="blue header">Last Name</th>
-                                    <th class="green header">Language</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Joe</td>
-                                    <td>Sixpack</td>
-                                    <td>English</td>
-                                  </tr><tr>
-                                    <td>3</td>
-                                    <td>Stu</td>
-                                    <td>Dent</td>
-                                    <td>Code</td>
-                                  </tr><tr>
-                                    <td>1</td>
-                                    <td>Your</td>
-                                    <td>One</td>
-                                    <td>English</td>
-                                  </tr>
-                                                     <tr>
-                                                          <td>2</td>
-                                                          <td>Joe</td>
-                                                          <td>Sixpack</td>
-                                                          <td>English</td>
-                                                        </tr><tr>
-                                                          <td>3</td>
-                                                          <td>Stu</td>
-                                                          <td>Dent</td>
-                                                          <td>Code</td>
-                                                        </tr><tr>
-                                                          <td>1</td>
-                                                          <td>Your</td>
-                                                          <td>One</td>
-                                                          <td>English</td>
-                                                        </tr>
-                                                                           <tr>
-                                                                                <td>2</td>
-                                                                                <td>Joe</td>
-                                                                                <td>Sixpack</td>
-                                                                                <td>English</td>
-                                                                              </tr><tr>
-                                                                                <td>3</td>
-                                                                                <td>Stu</td>
-                                                                                <td>Dent</td>
-                                                                                <td>Code</td>
-                                                                              </tr><tr>
-                                                                                <td>1</td>
-                                                                                <td>Your</td>
-                                                                                <td>One</td>
-                                                                                <td>English</td>
-                                                                              </tr>
-                                                                                                 <tr>
-                                                                                                      <td>2</td>
-                                                                                                      <td>Joe</td>
-                                                                                                      <td>Sixpack</td>
-                                                                                                      <td>English</td>
-                                                                                                    </tr><tr>
-                                                                                                      <td>3</td>
-                                                                                                      <td>Stu</td>
-                                                                                                      <td>Dent</td>
-                                                                                                      <td>Code</td>
-                                                                                                    </tr><tr>
-                                                                                                      <td>1</td>
-                                                                                                      <td>Your</td>
-                                                                                                      <td>One</td>
-                                                                                                      <td>English</td>
-                                                                                                    </tr>
-                                  </tbody>
-                              </table>
-
-                              <div class="pagination">
-                                      <ul>
-                                        <li class="prev"><a href="#">← Previous</a></li>
-                                        <li><a href="#">10</a></li>
-                                        <li><a href="#">11</a></li>
-                                        <li><a href="#">12</a></li>
-                                        <li><a href="#">13</a></li>
-                                        <li><a href="#">14</a></li>
-                                        <li class="active"><a href="#">15</a></li>
-                                        <li><a href="#">16</a></li>
-                                        <li><a href="#">17</a></li>
-                                        <li><a href="#">18</a></li>
-                                        <li><a href="#">19</a></li>
-                                        <li><a href="#">20</a></li>
-                                        <li class="next"><a href="#">Next →</a></li>
-                                      </ul>
-                                    </div>
-                              
-                              
-        </div>
-        <div class="span4 columns">
-          <p class="well center"><button type="button" class="btn success">Add a new user</button></p>
-          
-          <div class="well">
-            <h4>Settings</h4>
-          </div>
-
-          <div class="well">
-            <h4>Filter by</h4>
-          </div>
-
-          
-        </div>
-      
-    </div>
-    
-    </div>
-  
-    
-    <div id="footer">
-          <hr />
-      <div class="inner">
-        <div class="container">
-          <p class="right"><a href="#">Back to top</a></p>
-          <p>
-            Assembled with &hearts; by <a href="http://www.twitter.com/davitferreira" target="_blank">@davitferreira</a>, using <a href="#">twitter bootstrap</a> and <a href="#">jquery</a>.<br />
-            <a href="#">Click here for a complete list of plugins used.</a>
-          </p>
-        </div>
+  </div>
+  <div id="footer">
+    <hr>
+    <div class="inner">
+      <div class="container">
+        <p class="right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>
+          Assembled with ♥ by <a href="http://www.twitter.com/davitferreira" target="_blank">@davitferreira</a>, using <a href="http://twitter.github.com/bottstrap">twitter bootstrap</a> and <a href="http://jquery.com">jquery</a>.<br>
+          <a href="#" id="lnk-plugins-list" name="lnk-plugins-list">Click here for a complete list of plugins used.</a>
+        </p>
       </div>
     </div>
-    
-    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-    <script src="assets/js/admin.js"></script>
-    <script>$('.dropdown-menu').slideDown('fast');</script>
-  </body>
+  </div>
+</body>
 </html>
