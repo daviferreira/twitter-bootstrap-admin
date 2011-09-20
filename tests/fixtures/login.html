@@ -25,3 +25,24 @@
     <button type="submit" class="btn primary">Login</button>
   </div>
 </form>
+
+<form action="#" method="post" id="frm-recovery">
+  <div class="modal-header">
+    <h3>
+      Password Recovery
+    </h3>
+  </div>
+  <div class="modal-body">
+    <fieldset>
+      <div class="clearfix">
+        <label for="recovery-username">Username or e-mail</label>
+        <div class="input">
+          <input class="large validates[required]" id="recovery-username" name="recovery[username]" size="30" type="text" autocomplete="off"> <span class="help-inline">Password recovery hint</span>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn secondary toggle-login-recovery">Cancel</button> <button type="submit" class="btn primary">Submit</button>
+  </div>
+</form>

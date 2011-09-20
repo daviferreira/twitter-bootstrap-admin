@@ -35,7 +35,7 @@
     </form>
   </div>
   <div class="modal" id="modal-recovery">
-    <form action="#" method="post">
+    <form action="#" method="post" id="frm-recovery">
       <div class="modal-header">
         <h3>
           Password Recovery
@@ -46,7 +46,7 @@
           <div class="clearfix">
             <label for="recovery-username">Username or e-mail</label>
             <div class="input">
-              <input class="large" id="recovery-username" name="recovery[username]" size="30" type="text" autocomplete="off"> <span class="help-inline">Password recovery hint</span>
+              <input class="large validates[required]" id="recovery-username" name="recovery[username]" size="30" type="text" autocomplete="off"> <span class="help-inline">Password recovery hint</span>
             </div>
           </div>
         </fieldset>

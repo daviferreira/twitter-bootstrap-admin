@@ -53,7 +53,6 @@ var Admin = {
 };
 
 $(function(){
-  //$('form:visible:first input:text:first').focus();
   $('.toggle-login-recovery').click(function(e){
     Admin.toggleLoginRecovery();
     e.preventDefault();
