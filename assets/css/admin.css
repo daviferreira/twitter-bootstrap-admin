@@ -41,10 +41,14 @@ body.login #footer hr {
 }
 
 .plain-form {
-    margin: 0 0;
+  margin: 0 0;
 }
 
 .progress-form-file {
-    margin: 18px 0;
-    width: 260px;
+  margin: 18px 0;
+  width: 260px;
+}
+
+.users-header a {
+  float: right;
 }
