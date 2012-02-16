@@ -6,12 +6,10 @@
     <link rel="stylesheet" href="assets/css/global.css" type="text/css" />
 </head>
 <body>
-  <div class="topbar">
-    <div class="topbar-inner">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
       <div class="container">
-        <h3>
-          <a href="#">Project Name</a>
-        </h3>
+        <a href="#" class="brand">Project Name</a>
         <ul class="nav">
           <li class="active">
             <a href="#">Dashboard</a>
@@ -26,7 +24,7 @@
             <a href="#">Media</a>
           </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Settings</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
                 <a href="#">Secondary link</a>
@@ -39,13 +37,8 @@
               </li>
             </ul>
           </li>
-        </ul>
-        <form action="">
-          <input type="text" placeholder="Search">
-        </form>
-        <ul class="nav secondary-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle">System</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">System <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
                 <a href="#">Help</a>
@@ -59,6 +52,9 @@
             </ul>
           </li>
         </ul>
+        <form action="" class="navbar-search pull-left">
+          <input type="text" placeholder="Search" class="search-query span2">
+        </form>
       </div>
     </div>
   </div>
@@ -245,13 +241,13 @@
           <a href="#">Back to top</a>
         </p>
         <p>
-          Assembled with ♥ by <a href="http://www.twitter.com/davitferreira" target="_blank">@davitferreira</a>, using <a href="http://twitter.github.com/bottstrap">twitter bootstrap</a> and <a href="http://jquery.com">jquery</a>.<br>
-          <a href="#" id="lnk-plugins-list" name="lnk-plugins-list">Click here for a complete list of plugins used.</a>
+          Assembled with ♥ by <a href="http://www.twitter.com/davitferreira" target="_blank">@davitferreira</a>, using <a href="http://twitter.github.com/bottstrap">twitter bootstrap</a> and <a href="http://jquery.com">jquery</a>.
         </p>
       </div>
     </div>
   </div>
-  <script src="assets/js/jquery-1.6.4.min.js" type="text/javascript"></script>
-  <script src="assets/js/admin.js" type="text/javascript"></script>
+  <script src="assets/js/jquery-1.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/admin.js"></script>
 </body>
 </html>
