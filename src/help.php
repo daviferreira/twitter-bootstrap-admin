@@ -1,3 +1,4 @@
+<?php include('header.php'); ?>
 <div class="container top">
 
   <ul class="breadcrumb">
@@ -84,5 +85,6 @@
       </div>
     </div>
 
-  
+
 </div>
+<?php include('footer.php'); ?>

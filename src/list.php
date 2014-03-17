@@ -1,3 +1,7 @@
+<?php
+$user_active = true;
+include('header.php');
+?>
 <div class="container top">
 
   <ul class="breadcrumb">
@@ -14,9 +18,9 @@
       Users <a  href="form.html" class="btn btn-success">Add a new user</a>
     </h2>
   </div>
-  
 
-  
+
+
   <div class="row">
     <div class="span10 columns">
       <div class="well">
@@ -59,7 +63,7 @@
               English
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -78,7 +82,7 @@
               English
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -97,7 +101,7 @@
               Code
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -116,7 +120,7 @@
               Code
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -135,7 +139,7 @@
               Code
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -154,7 +158,7 @@
               Code
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -173,7 +177,7 @@
               Code
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -192,7 +196,7 @@
               Code
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -211,7 +215,7 @@
               Code
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -230,7 +234,7 @@
               Code
             </td>
             <td class="crud-actions">
-              <a href="form.html" class="btn btn-info">view</a>  
+              <a href="form.html" class="btn btn-info">view</a>
               <a href="form.html" class="btn btn-primary">edit</a>
               <a href="form.html" class="btn btn-danger">delete</a>
             </td>
@@ -324,3 +328,4 @@
     </div>
   </div>
 </div>
+<?php include('footer.php'); ?>

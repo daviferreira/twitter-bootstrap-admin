@@ -1,3 +1,7 @@
+<?php
+$dashboard_active = true;
+include('header.php');
+?>
 <div class="container top">
   <div class="row">
     <div class="span12 columns">
@@ -181,3 +185,4 @@
     </div>
   </div>
 </div>
+<?php include('footer.php'); ?>

@@ -1,5 +1,9 @@
+<?php
+$user_active = true;
+include('header.php');
+?>
 <div class="container top">
-  
+
   <ul class="breadcrumb">
     <li>
       <a href="dashboard.html">Home</a> <span class="divider">/</span>
@@ -11,9 +15,9 @@
       <a href="#">New user</a>
     </li>
   </ul>
-  
 
-  
+
+
   <div class="page-header">
     <h2>
       New user
@@ -22,22 +26,22 @@
 
 
 
-    
+
     <div class="alert alert-error">
             <a class="close" data-dismiss="alert">×</a>
             <strong>Oh snap!</strong> Change a few things up and try submitting again.
           </div>
-          
+
           <div class="alert alert-success">
                   <a class="close" data-dismiss="alert">×</a>
                   <strong>Well done!</strong> You successfully read this important alert message.
                 </div>
-                
+
                 <div class="alert alert-info">
                         <a class="close" data-dismiss="alert">×</a>
                         <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
                       </div>
-    
+
     <form class="form-horizontal">
             <fieldset>
               <div class="control-group">
@@ -46,20 +50,20 @@
                   <input type="text" value="This is focused…" id="focusedInput" class="input-xlarge focused">
                 </div>
               </div>
-              
+
               <div class="control-group">
                 <label for="fileInput" class="control-label">Focused input</label>
                 <div class="controls">
                   <input type="file" id="fileInput" class="input-xlarge">
-                  
+
                   <div class="progress progress-info progress-striped active progress-form-file">
                       <div class="bar" style="width: 40%;"></div>
                   </div>
-                  
+
                 </div>
               </div>
-              
-              
+
+
               <div class="control-group">
                 <label class="control-label">Uneditable input</label>
                 <div class="controls">
@@ -123,3 +127,4 @@
           </form>
 
 </div>
+<?php include('footer.php'); ?>

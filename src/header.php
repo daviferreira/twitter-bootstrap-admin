@@ -1,5 +1,6 @@
+<?php error_reporting(1); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"<?php if ($login) echo ' class="login"'; ?>>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,16 @@
     <link rel="stylesheet" href="assets/css/global.css" type="text/css">
 </head>
 <body>
+<?php if (!$login): ?>
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
       <a href="dashboard.html" class="brand">Project Name</a>
       <ul class="nav">
-        <li{active_dashboard}>
+        <li<?php if ($active_dashboard) echo ' class="active"'; ?>>
           <a href="dashboard.html">Dashboard</a>
         </li>
-        <li{active_users}>
+        <li<?php if ($active_users) echo ' class="active"'; ?>>
           <a href="list.html">Users</a>
         </li>
         <li>
@@ -60,3 +62,4 @@
     </div>
   </div>
 </div>
+<?php endif; ?>

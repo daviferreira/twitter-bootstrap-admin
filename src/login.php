@@ -1,3 +1,7 @@
+<?php
+$login = true;
+include('header.php');
+?>
 <div class="modal" id="modal-login">
   <form action="dashboard.html" method="post">
     <div class="modal-header">
@@ -48,3 +52,4 @@
     </div>
   </form>
 </div>
+<?php include('footer.php'); ?>
