@@ -8,57 +8,38 @@
     <link rel="stylesheet" href="assets/css/global.css" type="text/css">
 </head>
 <body>
-<div class="modal" id="modal-login">
-  <form action="dashboard.html" method="post">
-    <div class="modal-header">
-      <h3>
-        Login
-      </h3>
-    </div>
-    <div class="modal-body">
-      <fieldset>
-        <div class="control-group">
-          <label for="login-username">Username</label>
-          <div class="input">
-            <input class="large validates[required]" id="login-username" name="login[username]" size="30" type="text" autocomplete="off"> <span class="help-inline">Username hint</span>
-          </div>
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <form role="form">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Example block-level help text here.</p>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Check me out
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
         </div>
-        <div class="control-group error">
-          <label for="login-password">Password</label>
-          <div class="input">
-            <input class="large validates[required]" id="login-password" name="login[password]" size="30" type="password"> <span class="help-inline">Password hint</span>
-          </div>
-        </div>
-      </fieldset>
     </div>
-    <div class="modal-footer">
-      <a href="#" class="toggle-login-recovery">Can't remember your username/password?</a> <button type="submit" class="btn btn-primary">Login</button>
-    </div>
-  </form>
 </div>
-<div class="modal" id="modal-recovery">
-  <form action="#" method="post" id="frm-recovery">
-    <div class="modal-header">
-      <h3>
-        Password Recovery
-      </h3>
-    </div>
-    <div class="modal-body">
-      <fieldset>
-        <div class="control-group">
-          <label for="recovery-username">Username or e-mail</label>
-          <div class="input">
-            <input class="large validates[required]" id="recovery-username" name="recovery[username]" size="30" type="text" autocomplete="off"> <span class="help-inline">Password recovery hint</span>
-          </div>
-        </div>
-      </fieldset>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary toggle-login-recovery">Cancel</button> <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </form>
-</div>
-   <div id="footer">
+  </div> <!-- /container -->
+    <div id="footer">
     <hr>
     <div class="inner">
       <div class="container">

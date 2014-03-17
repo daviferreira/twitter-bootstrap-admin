@@ -1,4 +1,5 @@
-   <div id="footer">
+  </div> <!-- /container -->
+    <div id="footer">
     <hr>
     <div class="inner">
       <div class="container">
