@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="assets/css/global.css" type="text/css">
 </head>
 <body>
-<?php if (!$login): ?>
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="navbar-inner">
     <div class="container">
-      <a href="dashboard.html" class="brand">Project Name</a>
+        <a href="<?php echo ($login ? 'index' : 'dashboard'); ?>.html" class="navbar-brand">Project Name</a>
+      <?php if (!$login): ?>
       <ul class="nav">
         <li<?php if ($active_dashboard) echo ' class="active"'; ?>>
           <a href="dashboard.html">Dashboard</a>
@@ -59,8 +59,8 @@
       <form action="" class="navbar-search pull-left">
         <input type="text" placeholder="Search" class="search-query span2">
       </form>
+        <?php endif; ?>
     </div>
   </div>
 </div>
-<?php endif; ?>
 <div class="container">
